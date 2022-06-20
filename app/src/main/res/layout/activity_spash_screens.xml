@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_1"
+    tools:context=".ui.splash.SplashScreensActivity">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:src="@drawable/ic_icon_2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.35"
+        android:background="@drawable/gardient"
+        android:layout_width="70dp"
+        android:layout_height="70dp"/>
+    <LinearLayout
+        android:id="@+id/center_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintVertical_bias="0.2"
+        app:layout_constraintTop_toBottomOf="@id/icon"
+        app:layout_constraintBottom_toTopOf="@id/shadow_card"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/tv_heading"
+            android:textColor="@color/text_color1"
+            android:fontFamily="@font/julee"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:text="Connect With Random\nPeople From\nAround The World"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tv_desc"
+            android:textColor="@color/text_color1"
+            android:fontFamily="@font/julee"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Chat With People"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/shadow_card"
+        app:layout_constraintTop_toTopOf="@id/progress_1"
+        app:layout_constraintStart_toStartOf="@id/progress_1"
+        app:layout_constraintEnd_toEndOf="@id/progress_1"
+        app:cardElevation="30dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="200dp"
+        app:layout_constraintBottom_toBottomOf="@id/progress_1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/progress_1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:trackCornerRadius="8dp"
+        android:progress="0"
+        app:indicatorColor="@color/purple_700"
+        android:elevation="30dp"
+        android:layout_marginBottom="20dp"
+        app:trackThickness="10dp"
+        android:layout_gravity="center"
+        android:rotation="-180"
+        android:indeterminateOnly="false"
+        app:indicatorSize="150dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/progress_2"
+        app:layout_constraintStart_toStartOf="@id/progress_1"
+        app:layout_constraintEnd_toEndOf="@id/progress_1"
+        app:layout_constraintBottom_toBottomOf="@id/progress_1"
+        app:layout_constraintTop_toTopOf="@id/progress_1"
+        app:trackCornerRadius="8dp"
+        android:progress="50"
+        android:elevation="30dp"
+        app:indicatorColor="@color/teal_700"
+        app:trackThickness="10dp"
+        app:indicatorDirectionCircular="clockwise"
+        android:layout_gravity="center"
+        android:indeterminateOnly="false"
+        app:indicatorSize="150dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:id="@+id/next_btn"
+        android:src="@drawable/ic_play_arrow"
+        app:layout_constraintStart_toStartOf="@id/progress_2"
+        app:layout_constraintEnd_toEndOf="@id/progress_2"
+        app:layout_constraintTop_toTopOf="@id/progress_2"
+        app:layout_constraintBottom_toBottomOf="@id/progress_2"
+        android:layout_width="50dp"
+        android:gravity="center"
+        android:elevation="30dp"
+        android:layout_height="50dp"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

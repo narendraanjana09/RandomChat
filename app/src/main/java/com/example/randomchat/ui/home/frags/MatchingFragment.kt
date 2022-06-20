@@ -1,5 +1,6 @@
 package com.example.randomchat.ui.home.frags
 
+import android.content.Intent
 import android.os.Bundle
 import android.os.CountDownTimer
 import androidx.fragment.app.Fragment
@@ -23,6 +24,7 @@ import com.example.randomchat.ui.home.extra.FireBase
 import com.example.randomchat.ui.home.extra.SavedText
 import com.example.randomchat.ui.home.models.ChatsModel
 import com.example.randomchat.ui.home.viewmodel.MainViewModel
+import com.example.randomchat.ui.splash.SplashScreensActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
@@ -65,6 +67,9 @@ class MatchingFragment : Fragment() {
         FireBase().apply {
             roomRef.child(fUserUid).removeValue()
             userRef.child(fUserUid).child("room").removeValue()
+        }
+        binding.infoCard.setOnClickListener {
+            startActivity(Intent(requireActivity(),SplashScreensActivity::class.java))
         }
 
     }

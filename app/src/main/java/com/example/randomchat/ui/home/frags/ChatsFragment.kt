@@ -189,9 +189,7 @@ class ChatsFragment : Fragment() {
         val params = this.view.layoutParams as ViewGroup.MarginLayoutParams
         params.setMargins(12, 12, 12, 12)
         this.view.layoutParams = params
-
         this.view.background = context.getDrawable(R.drawable.round)
-
         ViewCompat.setElevation(this.view, 6f)
     }
     private fun showToast(message: String) {

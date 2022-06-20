@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Naren/Desktop/GooglePlayApps/RandomChat/app/src/main/res/drawable/bg_gradient.xml" value="0.1735" />
         <entry key="..\:/Users/Naren/Desktop/GooglePlayApps/RandomChat/app/src/main/res/drawable/chat_left_bg.xml" value="0.2265" />
         <entry key="..\:/Users/Naren/Desktop/GooglePlayApps/RandomChat/app/src/main/res/drawable/chat_left_bg_progress.xml" value="0.2265" />
         <entry key="..\:/Users/Naren/Desktop/GooglePlayApps/RandomChat/app/src/main/res/drawable/chat_right_bg.xml" value="0.2265" />
@@ -10,6 +11,7 @@
         <entry key="..\:/Users/Naren/Desktop/GooglePlayApps/RandomChat/app/src/main/res/drawable/cursor.xml" value="0.2265" />
         <entry key="..\:/Users/Naren/Desktop/GooglePlayApps/RandomChat/app/src/main/res/drawable/gardient.xml" value="0.2265" />
         <entry key="..\:/Users/Naren/Desktop/GooglePlayApps/RandomChat/app/src/main/res/drawable/ic_background.xml" value="0.2265" />
+        <entry key="..\:/Users/Naren/Desktop/GooglePlayApps/RandomChat/app/src/main/res/drawable/ic_icon.xml" value="0.1425" />
         <entry key="..\:/Users/Naren/Desktop/GooglePlayApps/RandomChat/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1905" />
         <entry key="..\:/Users/Naren/Desktop/GooglePlayApps/RandomChat/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.1905" />
         <entry key="..\:/Users/Naren/Desktop/GooglePlayApps/RandomChat/app/src/main/res/drawable/ic_rectangle_7.xml" value="0.1525" />
@@ -17,8 +19,10 @@
         <entry key="..\:/Users/Naren/Desktop/GooglePlayApps/RandomChat/app/src/main/res/drawable/round.xml" value="0.154" />
         <entry key="..\:/Users/Naren/Desktop/GooglePlayApps/RandomChat/app/src/main/res/drawable/shadow_1.xml" value="0.2265" />
         <entry key="..\:/Users/Naren/Desktop/GooglePlayApps/RandomChat/app/src/main/res/drawable/shadow_2.xml" value="0.2265" />
+        <entry key="..\:/Users/Naren/Desktop/GooglePlayApps/RandomChat/app/src/main/res/drawable/splash_background.xml" value="0.1735" />
         <entry key="..\:/Users/Naren/Desktop/GooglePlayApps/RandomChat/app/src/main/res/layout/activity_home.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/Naren/Desktop/GooglePlayApps/RandomChat/app/src/main/res/layout/activity_main.xml" value="0.18229166666666666" />
+        <entry key="..\:/Users/Naren/Desktop/GooglePlayApps/RandomChat/app/src/main/res/layout/activity_spash_screens.xml" value="0.264" />
         <entry key="..\:/Users/Naren/Desktop/GooglePlayApps/RandomChat/app/src/main/res/layout/avtar_recyler_item.xml" value="0.21614583333333334" />
         <entry key="..\:/Users/Naren/Desktop/GooglePlayApps/RandomChat/app/src/main/res/layout/cancel_chat_layout.xml" value="0.21354166666666666" />
         <entry key="..\:/Users/Naren/Desktop/GooglePlayApps/RandomChat/app/src/main/res/layout/chat_item_left.xml" value="0.17942583732057416" />
