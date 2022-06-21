@@ -17,6 +17,7 @@
         <entry key="..\:/Users/Naren/Desktop/GooglePlayApps/RandomChat/app/src/main/res/drawable/ic_rectangle_7.xml" value="0.1525" />
         <entry key="..\:/Users/Naren/Desktop/GooglePlayApps/RandomChat/app/src/main/res/drawable/ic_rectangle_8.xml" value="0.1525" />
         <entry key="..\:/Users/Naren/Desktop/GooglePlayApps/RandomChat/app/src/main/res/drawable/round.xml" value="0.154" />
+        <entry key="..\:/Users/Naren/Desktop/GooglePlayApps/RandomChat/app/src/main/res/drawable/round_bg.xml" value="0.2265" />
         <entry key="..\:/Users/Naren/Desktop/GooglePlayApps/RandomChat/app/src/main/res/drawable/shadow_1.xml" value="0.2265" />
         <entry key="..\:/Users/Naren/Desktop/GooglePlayApps/RandomChat/app/src/main/res/drawable/shadow_2.xml" value="0.2265" />
         <entry key="..\:/Users/Naren/Desktop/GooglePlayApps/RandomChat/app/src/main/res/drawable/splash_background.xml" value="0.1735" />
@@ -29,6 +30,7 @@
         <entry key="..\:/Users/Naren/Desktop/GooglePlayApps/RandomChat/app/src/main/res/layout/chat_item_right.xml" value="0.259375" />
         <entry key="..\:/Users/Naren/Desktop/GooglePlayApps/RandomChat/app/src/main/res/layout/fragment_chats.xml" value="0.4" />
         <entry key="..\:/Users/Naren/Desktop/GooglePlayApps/RandomChat/app/src/main/res/layout/fragment_matching.xml" value="0.259375" />
+        <entry key="..\:/Users/Naren/Desktop/GooglePlayApps/RandomChat/app/src/main/res/layout/fragment_no__internet_.xml" value="0.1" />
         <entry key="..\:/Users/Naren/Desktop/GooglePlayApps/RandomChat/app/src/main/res/layout/fragment_progress.xml" value="0.259375" />
         <entry key="..\:/Users/Naren/Desktop/GooglePlayApps/RandomChat/app/src/main/res/layout/fragment_random_match.xml" value="0.22760416666666666" />
         <entry key="..\:/Users/Naren/Desktop/GooglePlayApps/RandomChat/app/src/main/res/layout/fragment_welcome.xml" value="0.18072916666666666" />

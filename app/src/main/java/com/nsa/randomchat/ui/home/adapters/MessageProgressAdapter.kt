@@ -1,0 +1,70 @@
+package com.nsa.randomchat.ui.home.adapters
+
+import android.content.Context
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import android.widget.TextView
+import androidx.recyclerview.widget.RecyclerView
+import com.nsa.randomchat.R
+import com.nsa.randomchat.ui.home.models.ChatsModel
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.FirebaseUser
+import java.util.*
+
+
+class MessageProgressAdapter(
+    val context: Context,
+    val list: List<ChatsModel>
+): RecyclerView.Adapter<MessageProgressAdapter.ViewHolder>() {
+    private val MSG_TYPE_LEFT = 0
+    private val MSG_TYPE_RIGHT = 1
+    private var fuser: FirebaseUser? = null
+
+    class ViewHolder(itemView: View):RecyclerView.ViewHolder(itemView){
+
+        val message_tv : TextView = itemView.findViewById(R.id.message_tv)
+        val time_tv : TextView = itemView.findViewById(R.id.time_tv)
+
+    }
+
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
+        if(viewType==MSG_TYPE_LEFT){
+        val view= LayoutInflater.from(parent.context).inflate(R.layout.chat_item_left,parent,false)
+        return ViewHolder(view)
+        }else{
+            val view= LayoutInflater.from(parent.context).inflate(R.layout.chat_item_right,parent,false)
+            return ViewHolder(view)
+        }
+    }
+
+
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+        val chat=list[position]
+        holder.apply {
+//            message_tv.visibility=View.INVISIBLE
+            time_tv.text="    "
+
+            message_tv.text=chat.messageText
+            if(chat.messageUser=="1"){
+                time_tv.background=context.resources.getDrawable(R.drawable.chat_right_bg_progress)
+                message_tv.background=context.resources.getDrawable(R.drawable.chat_right_bg_progress)
+            }else{
+            message_tv.background=context.resources.getDrawable(R.drawable.chat_left_bg_progress)
+                time_tv.background=context.resources.getDrawable(R.drawable.chat_left_bg_progress)
+        }
+        }
+
+    }
+    override fun getItemViewType(position: Int): Int {
+        fuser = FirebaseAuth.getInstance().currentUser
+        return if (list[position].messageUser=="1") {
+            MSG_TYPE_RIGHT
+        } else {
+            MSG_TYPE_LEFT
+        }
+    }
+
+    override fun getItemCount(): Int = list.size
+
+}

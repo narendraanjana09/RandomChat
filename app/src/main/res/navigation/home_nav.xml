@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/welcomeFragment"
-        android:name="com.example.randomchat.ui.home.frags.WelcomeFragment"
+        android:name="com.nsa.randomchat.ui.home.frags.WelcomeFragment"
         android:label="fragment_welcome"
         tools:layout="@layout/fragment_welcome" >
         <action
@@ -18,7 +18,7 @@
     </fragment>
     <fragment
         android:id="@+id/matchingFragment"
-        android:name="com.example.randomchat.ui.home.frags.MatchingFragment"
+        android:name="com.nsa.randomchat.ui.home.frags.MatchingFragment"
         android:label="MatchingFragment" >
         <action
             android:id="@+id/action_matchingFragment_to_randomMatchFragment"
@@ -26,7 +26,7 @@
     </fragment>
     <fragment
         android:id="@+id/randomMatchFragment"
-        android:name="com.example.randomchat.ui.home.frags.RandomMatchFragment"
+        android:name="com.nsa.randomchat.ui.home.frags.RandomMatchFragment"
         android:label="RandomMatchFragment" >
         <action
             android:id="@+id/action_randomMatchFragment_to_chatsFragment"
@@ -37,7 +37,7 @@
     </fragment>
     <fragment
         android:id="@+id/chatsFragment"
-        android:name="com.example.randomchat.ui.home.frags.ChatsFragment"
+        android:name="com.nsa.randomchat.ui.home.frags.ChatsFragment"
         android:label="ChatsFragment" >
     </fragment>
 </navigation>

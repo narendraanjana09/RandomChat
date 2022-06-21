@@ -64,6 +64,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toTopOf="@id/randome_user_name_tv"
             android:layout_marginTop="10dp"
+            app:cardBackgroundColor="@color/background"
             app:strokeColor="@color/teal_200"
             app:strokeWidth="4dp"
             android:layout_height="100dp">
@@ -105,10 +106,11 @@
         app:cardCornerRadius="8dp"
         app:cardElevation="8dp"
         android:layout_marginTop="20dp"
+        app:cardBackgroundColor="@color/background"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/randome_icon"
-        app:strokeColor="@color/teal_200"
+        app:strokeColor="@color/teal_500"
         app:strokeWidth="4dp"
         android:layout_height="100dp">
         <ImageView

@@ -134,6 +134,24 @@
             android:layout_height="match_parent"/>
 
     </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/share_card"
+        app:cardBackgroundColor="@color/purple_700"
+        app:cardCornerRadius="40dp"
+        app:cardElevation="20dp"
+        app:layout_constraintEnd_toStartOf="@id/info_card"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toBottomOf="@id/info_card"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        >
+        <ImageView
+            android:layout_margin="15dp"
+            android:src="@drawable/ic_baseline_share_24"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </androidx.cardview.widget.CardView>
 
 
 
