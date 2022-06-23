@@ -31,9 +31,10 @@ class MainViewModel(application: Application): AndroidViewModel(application) {
         _roomModel.value=roomModel
     }
 
+    private lateinit var chatTimer:CountDownTimer
     fun startChatProgress() {
 
-           object :CountDownTimer(200000,1000){
+        chatTimer= object :CountDownTimer(200000,1000){
                override fun onTick(p0: Long) {
                    var message=""
                    for(j in 1..Util.numbers.random()){
@@ -46,7 +47,15 @@ class MainViewModel(application: Application): AndroidViewModel(application) {
                override fun onFinish() {
 
                }
-           }.start()
+           }
+        chatTimer.start()
+
+    }
+
+    fun pauseCountDown() {
+        if(chatTimer!=null){
+            chatTimer.cancel()
+        }
 
     }
 

@@ -170,15 +170,20 @@ class MatchingFragment : Fragment() {
             }
         }
         linearLayoutManager.stackFromEnd = true
+        mainViewModel.startChatProgress()
         binding.progressRecycler.layoutManager = linearLayoutManager
         binding.progressRecycler.adapter=MessageProgressAdapter(requireContext(),chatsList)
-        mainViewModel.startChatProgress()
         mainViewModel.newChat.observe(viewLifecycleOwner){
             chatsList.add(it)
             (binding.progressRecycler.adapter as MessageProgressAdapter).notifyItemInserted(chatsList.size-1)
             binding.progressRecycler.scrollToPosition(chatsList.size-1)
         }
 
+    }
+
+    override fun onPause() {
+        super.onPause()
+        mainViewModel.pauseCountDown()
     }
 
 

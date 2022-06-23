@@ -28,8 +28,11 @@ class SplashScreensActivity : AppCompatActivity() {
             ContextCompat.getColor(this, R.color.purple_700)
         binding.nextBtn.setOnClickListener {
             if(page==1){
+                val splashDone=SavedText(this).getBoolean(SavedText.SPLASH_DONE)
+                if(!splashDone){
                 SavedText(this).setBoolean(SavedText.SPLASH_DONE,true)
                 startActivity(Intent(this, HomeActivity::class.java))
+                }
                 finish()
             }else{
             changeButton()
